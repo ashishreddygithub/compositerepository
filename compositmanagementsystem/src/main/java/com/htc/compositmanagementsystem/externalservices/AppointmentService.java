@@ -11,7 +11,7 @@ import com.htc.compositmanagementsystem.entity.Appointment;
 @Service	
 @FeignClient(url = "http://localhost:63122",name="appointmentmanagement")
 public interface AppointmentService {
-	@GetMapping("/appointments/{doctorId}")
+	@GetMapping("/api/appointments/{doctorId}")
 	Appointment getAppointmentBydoctorId(@PathVariable("doctorId") Long doctorId);
 
 }
